@@ -1,0 +1,25 @@
+Weapon GattlingSentryDroneGun
+  PrimaryDamage         = 10.0
+  PrimaryDamageRadius   = 0.0
+  AttackRange           = 200.0
+  DamageType            = Gattling
+  DeathType             = NORMAL
+  WeaponSpeed           = 999999.0
+  ProjectileObject      = NONE
+  FireFX                = WeaponFX_GattlingTankMachineGunFire
+  VeterancyFireFX       = HEROIC WeaponFX_GattlingTankMachineGunFireWithRedTracers
+  FireSound             = GattlingTankWeapon
+  RadiusDamageAffects   = ALLIES ENEMIES NEUTRALS
+  DelayBetweenShots     = 400
+  ClipSize              = 0
+  ClipReloadTime        = 0
+  ContinuousFireOne     = 2
+  ContinuousFireTwo     = 4
+  ContinuousFireCoast   = 1000
+  WeaponBonus           = CONTINUOUS_FIRE_MEAN RATE_OF_FIRE 200%
+  WeaponBonus           = CONTINUOUS_FIRE_FAST RATE_OF_FIRE 300%
+  WeaponBonus           = PLAYER_UPGRADE DAMAGE 125%
+  AntiAirborneVehicle   = No
+  AntiAirborneInfantry  = No
+  AntiGround = Yes
+End

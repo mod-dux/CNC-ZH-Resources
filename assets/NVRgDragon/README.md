@@ -8,4 +8,4 @@ Model
 
 Ini
 ---
-* based on `GLAVehicleQuadCannon`
+* based on `ChinaTankDragon`

@@ -18,11 +18,12 @@ def reindent_lines(lines):
         nl = '  ' * indent + line
         l.append(nl.rstrip()+'\n')
         if any_in(['ModuleTag', 'SpyTag', 'Behavior', 'DrawTag', 'BodyTag'], active_line):
-            indent = indent + 1
+            if not 'UpgradeToRemove' in active_line:
+                indent = indent + 1
         for k in ['Object ', 'ConditionState', 'DefaultConditionState', 'ArmorSet',
                   'WeaponSet', 'UnitSpecificSounds', 'TransitionState', 'Prerequisites',
                   'AttackAreaDecal', 'TargetingReticleDecal', 'DeliveryDecal\n',
-                  'Turret\n', 'ObjectReskin ', 'GridDecalTemplate']:
+                  'Turret\n', 'AltTurret\n', 'ObjectReskin ', 'GridDecalTemplate', 'UnitSpecificFX']:
             if active_line.startswith(k) and not (active_line.startswith('Object ') and ignore_object):
                 indent = indent + 1
         if 'Prerequisites' in active_line:
